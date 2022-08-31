@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="cb7ab7a3-d7bd-46ab-9c01-abb748c9bbf6" >
+		<http:listener-connection host="0.0.0.0" port="9999" />
+	</http:listener-config>
+	<flow name="se_munit_demoFlow" doc:id="1eb59080-42d6-46c0-b989-a85a49603037" >
+		<http:listener doc:name="Listener" doc:id="f7667f4a-4c56-41dd-a8ca-4aaf4d02ebc1" config-ref="HTTP_Listener_config" path="/mulesoft" allowedMethods="GET"/>
+		<set-payload value="Welcome to the Copado SE Demo Org!" doc:name="Set Payload" doc:id="b98664d9-1a79-4a92-8837-2b6fd84150c5" />
+	</flow>
+	<flow name="se_munit_demoFlow1" doc:id="d3f3531b-c94c-4660-8003-2ba0f5e6ea68" >
+		<http:listener doc:name="Listener" doc:id="5f051f93-21d0-4475-aba2-2d0a64dbf4f0" config-ref="HTTP_Listener_config" path="/mulesoft" allowedMethods="POST"/>
+		<set-payload value="Please POST to the Copado SE Demo Org!" doc:name="Set Payload" doc:id="a31ba670-0e20-4542-9d3e-840cc00c19ac" />
+	</flow>
+</mule>

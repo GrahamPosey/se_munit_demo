@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-<<<<<<< HEAD
 <!-- First comment -->
-=======
 
->>>>>>> 1f2fdf8472c91a7c64b43fa65618dc76df9a71c4
 	<groupId>com.mycompany</groupId>
 	<artifactId>se_munit_demo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
@@ -23,10 +20,7 @@
 	</properties>
 
 	<build>
-<<<<<<< HEAD
-	
-=======
->>>>>>> 1f2fdf8472c91a7c64b43fa65618dc76df9a71c4
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -34,7 +28,6 @@
 				<version>3.0.0</version>
 			</plugin>
 			<plugin>
-<<<<<<< HEAD
 	            <groupId>org.mule.tools.maven</groupId>
 	            <artifactId>mule-maven-plugin</artifactId>
 	            <version>${mule.maven.plugin.version}</version>
@@ -56,13 +49,6 @@
 				    </cloudHubDeployment>
 	            </configuration>
     		</plugin>
-=======
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-			</plugin>
->>>>>>> 1f2fdf8472c91a7c64b43fa65618dc76df9a71c4
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
 				<artifactId>munit-maven-plugin</artifactId>
